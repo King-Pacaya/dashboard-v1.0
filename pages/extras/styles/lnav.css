@@ -1,0 +1,76 @@
+/**************************************Dark**************************************/
+	#lnav.night
+	{
+	border: solid white 2px;
+	height: 100vh;
+	width: 15%;
+	align-items: center;
+	flex-direction: column;
+	display: flex;
+	position: fixed;
+	}
+	#lntittle.night
+	{
+	margin: 2vh 0 3vh 0;
+	font-size: 2vw;
+	width: 100%;
+	text-align: center;
+	font-family: "DM Sans", sans-serif;
+	}
+	#licon1.night, #licon2.night, #licon3.night, #licon4.night,
+	#licon5.night, #licon6.night, #licon7.night, #licon8.night
+	{
+	cursor: pointer;
+	height: 9vh;
+	fill: #F1F6FD;
+	margin: 0.5vh 0 0.5vh 0;
+	padding: 1vh;
+	border-radius: 10px;
+	transition: 0.3s;
+	}
+	#licon1.night:hover, #licon2.night:hover,
+	#licon3.night:hover, #licon4.night:hover,
+	#licon5.night:hover, #licon6.night:hover,
+	#licon7.night:hover, #licon8.night:hover
+	{
+	background: #F1F6FD;
+	fill: #0E1826;
+	}
+/*************************************Light*************************************/
+	#lnav.day
+	{
+	border: solid black 2px;
+	height: 100vh;
+	width: 15%;
+	align-items: center;
+	flex-direction: column;
+	display: flex;
+	position: fixed;
+	}
+	#lntittle.day
+	{
+	margin: 2vh 0 3vh 0;
+	font-size: 2vw;
+	width: 100%;
+	text-align: center;
+	font-family: "DM Sans", sans-serif;
+	}
+	#licon1.day, #licon2.day, #licon3.day, #licon4.day,
+	#licon5.day, #licon6.day, #licon7.day, #licon8.day
+	{
+	cursor: pointer;
+	height: 9vh;
+	fill: #0E1826;
+	margin: 0.5vh 0 0.5vh 0;
+	padding: 1vh;
+	border-radius: 10px;
+	transition: 0.3s;
+	}
+	#licon1.day:hover, #licon2.day:hover,
+	#licon3.day:hover, #licon4.day:hover,
+	#licon5.day:hover, #licon6.day:hover,
+	#licon7.day:hover, #licon8.day:hover
+	{
+	background: #0E1826;
+	fill: #F1F6FD;
+	}

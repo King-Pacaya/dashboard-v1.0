@@ -1,0 +1,21 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+cursor:url(https://cdn.custom-cursor.com/db/8132/32/youtubers-tommyinnit-and-diamond-sword--cursor.png) , default;
+}
+path
+{
+cursor: pointer;
+}
+body.night
+{
+background: #0E1826;
+color: #F1F6FD;
+}
+body.day
+{
+background: #F1F6FD;
+color: #0E1826;
+}

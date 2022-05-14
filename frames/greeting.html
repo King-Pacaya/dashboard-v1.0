@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+<style type="text/css">
+  *
+  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor:url(https://cdn.custom-cursor.com/db/8132/32/youtubers-tommyinnit-and-diamond-sword--cursor.png) , default;
+  }
+  body.night
+  {
+  background: #092933;
+  color: #FFFFFF;
+  }
+  body.day
+  {
+  background: #FFFFFF;
+  color: #0E1826;
+  }
+  #greeting.day
+  {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: dashed black 2px;
+  }
+  #greeting.night
+  {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: dashed white 2px;
+  }
+  #col-1
+  {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 5vw;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1vw;
+  }
+</style>
+</head>
+<body>
+
+  <div id="greeting">
+    <div id="col-1"></div>
+  </div>
+
+<script type="text/javascript">
+// DOM
+var body = document.querySelector("body");
+var greet = document.getElementById("greeting");
+
+function updateClock() {
+  // Get date
+  var date = new Date();
+
+  // Get hours and minutes
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+
+  if (minutes <= 9) {
+    minutes = "0" + minutes;
+  }
+  
+  var time = hours + ":" + minutes;
+
+  timeDisplay.innerHTML = time;
+}
+
+// Update every second
+setInterval(updateClock, 100);
+setInterval(check, 100);
+
+// Check for date or night
+function check() {
+  
+  // Get date
+  var date = new Date();
+  // Get hours
+  var hours = date.getHours();
+  
+  if (hours >= 7.9 && hours <= 16.9) {
+    // Day Time
+    console.log("Day time");
+    
+    var elements = [body, greet];
+    
+    elements.forEach(function(element) {
+      element.classList.remove("night");
+      element.classList.add("day");
+    });
+
+  } else {
+    // Night Time
+    console.log("Night time");
+    
+    var elements = [body, greet];
+    
+    elements.forEach(function(element) {
+      element.classList.remove("day");
+      element.classList.add("night");
+    });
+
+  }
+}
+
+  var today = new Date();
+  var hourNow = today.getHours();
+  var greeting;
+  var icon;
+
+  if (hourNow < 11.9){
+    greeting = "Good Morning King!";
+    icon = "coffee";
+  }
+  else if (hourNow < 17.9){
+    greeting = 'Good afternoon King!';
+    icon = "sun-o";
+  }
+  else if (hourNow < 23.9){
+    greeting = "Good night King!";
+    icon = "moon-o";
+  }
+  else {
+    greeting = "Welcome";
+  }
+
+  document.getElementById("col-1").innerHTML = "<h3>" + greeting + " </h1>";
+
+  document.getElementById("icon").innerHTML = ('<i class="fa fa-' + icon + '" aria-hidden="true"></i>');
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+#prevd, #nextd
+{
+position: absolute;
+cursor: pointer;
+top: 2vh;
+font-size: 2vw;
+z-index: 1;
+}
+#nextd
+{
+right: 1.5vw;
+}
+#prevd
+{
+left: 1.5vw;
+}
+#slidesigncont
+{
+position: fixed;
+top: 13vh;
+right: 3%;
+height: 80vh;
+width: 25%;
+border-radius: 15px;
+background: #122934;
+box-shadow: 0vw 1vh 15px rgba(0, 0, 0, 0.6);
+font-family: 'DM Sans', sans-serif;
+overflow: hidden;
+z-index: -1;
+}
+#slidesigncont::-webkit-scrollbar
+{
+width: 10px;
+background: transparent;
+}
+#slidesigncont::-webkit-scrollbar-thumb
+{
+background: rgba(6, 27, 33, 0.85);
+border-radius: 25px;
+border: solid white 2px;
+}

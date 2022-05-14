@@ -1,0 +1,254 @@
+:root
+{
+--font: 'DM Sans', sans-serif;
+--color1: #000000;
+--color2: #FFFFFF;
+--backgroundc: #182935;
+}
+
+/*******************************Right Calendar*******************************/
+  .calendar
+  {
+  position: absolute;
+  right: 3vw;
+  bottom: 5vh;
+  background: var(--color2);
+  width: 80%;
+  height: 80vh;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: -1;
+  }
+  .calendar-change-year
+  {
+  position: relative;
+  font-family: var(--font);
+  text-align: center;
+  font-size: 4vw;
+  padding: 2.5vh 0 2.5vh 0;
+  color: var(--color1);
+  }
+  .calendar-change-year-slider
+  {
+  color: var(--color1);
+  }
+  .calendar-month
+  {
+  list-style: none;
+  height: 5.5vh;
+  border-bottom: dashed rgb(0, 0, 0) 3px;
+  }
+  .calendar-month li
+  {
+  width: calc(100% / 12);
+  color: var(--color1);
+  font-family: var(--font);
+  font-size: 1vw;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  height: 100%;
+  line-height: 30px;
+  }
+  .calendar-month li.active
+  {
+  color: var(--color1);
+  font-weight: 700;
+  }
+  .calendar-week
+  {
+  font-family: var(--font);
+  color: var(--color1);
+  font-size: 1.2vw;
+  height: 6vh;
+  text-transform: uppercase;
+  list-style: none;
+  font-weight: 600;
+  }
+  .calendar-week li
+  {
+  padding-top: 1%;
+  width: calc(100% / 7);
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  }
+  .right-side
+  {
+  position: absolute;
+  right: 0;
+  margin: 0;
+  height: 100%;
+  width: 70%;
+  }
+  .calendar-days
+  {
+  font-size: 1.2vw;
+  font-family: var(--font);
+  }
+  .calendar-days li
+  {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.2vw;
+  width: calc(100% / 7);
+  height: 7vh;
+  }
+  .calendar-days li:after
+  {
+  content: attr(data-day);
+  position: relative;
+  height: auto;
+  line-height: 6.5vh;
+  color: var(--color1);
+  padding: 1vh 2vw 1vh 2vw;
+  }
+  .calendar-days li:hover:after
+  {
+  border-radius: 5px;
+  background: var(--backgroundc);
+  color: var(--color2);
+  margin: auto;
+  }
+  .calendar-days li.selected-day:after
+  {
+  background: var(--backgroundc);
+  color: var(--color2);
+  border-radius: 5px;
+  }
+  .calendar-days li.another-month:after
+  {
+  color: rgba(0, 0, 0, 0.6);
+  }
+  .calendar-days li.another-month:hover:after
+  {
+  background: var(--backgroundc);
+  color: var(--color2);
+  }
+  .calendar-days li.active-day:after
+  {
+  position: relative;
+  border-radius: 5px;
+  color: var(--color2);
+  background: var(--backgroundc);
+  z-index: 1;
+  border: solid orange 3px;
+  }
+  .calendar-days li.event-day:before
+  {
+  content: '';
+  position: absolute;
+  width: 1vw;
+  height: 1vw;
+  background: orange;
+  border-radius: 10px;
+  z-index: 2;
+  }
+/*********************************Left Calendar*********************************/
+  .left-side
+  {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  background: var(--backgroundc);
+  }
+  .current-day
+  {
+  font-family: var(--font);
+  height: auto;
+  }
+  .current-day-events
+  {
+  padding: 0;
+  height: 50%;
+  height: auto;
+  font-family: var(--font);
+  color: var(--color2);
+  font-size: 1.5vw;
+  }
+  .current-day-events div
+  {
+  text-align: center;
+  padding: 0 10vw 0 0;
+  /*border: solid red 2px;*/
+  }
+  .current-day-events ul
+  {
+  padding: 1vh 1vw 1vh 0;
+  font-size: 1.5vw;
+  text-align: center;
+  list-style: none;
+  }
+  .calendar h1
+  {
+  position: relative;
+  text-align: center;
+  font-size: 8vw;
+  margin: 0;
+  color: var(--color2);
+  padding: 6vh 0 1vh 0;
+  }
+  .calendar-left-side-day
+  {
+  }
+  .calendar-left-side-day-of-week
+  {
+  position: relative;
+  margin: 0;
+  padding: 1vh 0 1vh 0;
+  font-size: 2.5vw;
+  text-align: center;
+  color: var(--color2);
+  }
+  .add-event-day
+  {
+  position: absolute;
+  bottom: 2vh;
+  width: 90%;
+  margin: 0 5% 0 5%;
+  color: var(--color2);
+  border-bottom: 2px solid var(--color2);
+  height: 5vh;
+  font-size: 1.4vw;
+  font-family: var(--font);
+  }
+  .add-event-day-field
+  {
+  position: absolute;
+  border: none;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  cursor: text;
+  color: var(--color2);
+  }
+  .add-event-day-field::placeholder
+  {
+  color: var(--color2);
+  }
+  .add-event-day-field-btn
+  {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: auto;
+  cursor: pointer;
+  }
+  .fa-plus-circle
+  {
+  position: absolute;
+  right: 0;
+  bottom: 1vh;
+  height: auto;
+  cursor: pointer;
+  }
+  .fa-caret-left
+  {
+  cursor: pointer;
+  }
+  .fa-caret-right
+  {
+  cursor: pointer;
+  }

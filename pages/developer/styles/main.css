@@ -1,0 +1,67 @@
+#main.day
+{
+position: fixed;
+top: 10vh;
+left: 15%;
+height: 85vh;
+width: 80%;
+border-radius: 15px;
+background: #FFFFFF;
+box-shadow: 0vw 1vh 15px rgba(0, 0, 0, 0.6);
+overflow: auto;
+z-index: -2;
+}
+#main.night
+{
+position: fixed;
+top: 10vh;
+left: 15%;
+height: 85vh;
+width: 80%;
+border-radius: 15px;
+background: #122934;
+box-shadow: 0vw 1vh 15px rgba(0, 0, 0, 0.6);
+overflow: auto;
+z-index: -1;
+}
+#main::-webkit-scrollbar
+{
+width: 14px;
+height: 14px;
+background: transparent;
+}
+#main::-webkit-scrollbar-thumb
+{
+background: rgba(6, 27, 33, 0.85);
+border-radius: 25px;
+border: solid white 2px;
+}
+.tm
+{
+font-family: 'DM Sans', sans-serif;
+font-size: 3vw;
+padding: 3.5vh 0 3.5vh 1.5vw;
+}
+.dm
+{
+width: calc(100%/4);
+height: 20vh;
+float: left;
+margin: 0 0 3vh 0;
+z-index: 1;
+}
+.im
+{
+display: block;
+margin: auto;
+height: 65%;
+cursor: pointer;
+}
+.pm
+{
+padding: 1vh 0 1vh 0;
+font-family: 'DM Sans', sans-serif;
+font-size: 1.8vw;
+text-align: center;
+bottom: 0;
+}

@@ -1,0 +1,100 @@
+/***********************************Slide Container***********************************/
+#slidesigncont.day
+{
+position: fixed;
+top: 10vh;
+left: 15%;
+height: 85vh;
+width: 80%;
+border-radius: 15px;
+background: #FFFFFF;
+box-shadow: 0vw 1vh 15px rgba(0, 0, 0, 0.6);
+overflow: auto;
+z-index: -1;
+}
+#slidesigncont.night
+{
+position: fixed;
+top: 10vh;
+left: 15%;
+height: 85vh;
+width: 80%;
+border-radius: 15px;
+background: #122934;
+box-shadow: 0vw 1vh 15px rgba(0, 0, 0, 0.6);
+overflow: auto;
+z-index: -1;
+}
+#slidesigncont::-webkit-scrollbar
+{
+width: 10px;
+background: transparent;
+}
+#slidesigncont::-webkit-scrollbar-thumb
+{
+background: rgba(6, 27, 33, 0.85);
+border-radius: 25px;
+border: solid white 2px;
+}
+/*************************************Next & Prev*************************************/
+#prevd, #nextd
+{
+position: absolute;
+cursor: pointer;
+top: 2vh;
+font-size: 2vw;
+z-index: 1;
+}
+#nextd
+{
+right: 1.5vw;
+}
+#prevd
+{
+left: 1.5vw;
+}
+.dides
+{
+position: relative;
+height: 13vh;
+width: 100%;
+}
+.tides
+{
+position: relative;
+font-family: 'DM Sans', sans-serif;
+text-align: center;
+font-size: 3vw;
+padding: 1vh 0 1vh 0;
+height: 8vh;
+}
+
+
+.ttolde
+{
+font-family: 'DM Sans', sans-serif;
+font-size: 3vw;
+padding: 3.5vh 0 3.5vh 1.5vw;
+}
+.dtolde
+{
+width: calc(100%/4);
+height: 20vh;
+float: left;
+margin: 0 0 3vh 0;
+}
+.itolde
+{
+display: block;
+margin: auto;
+height: 65%;
+cursor: pointer;
+}
+.ptolde
+{
+padding: 1vh 0 1vh 0;
+font-family: 'DM Sans', sans-serif;
+font-size: 1.8vw;
+text-align: center;
+bottom: 0;
+}

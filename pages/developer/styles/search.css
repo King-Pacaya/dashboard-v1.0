@@ -1,0 +1,57 @@
+/**************************************Dark**************************************/
+		#form6.night, #form7.night
+		{
+		border-radius: 20px;
+		background-color: #182935;
+		padding-right: 12px;
+		height: 6.5vh;
+		display: flex;
+		justify-content: space-between;
+		width: 60%;
+		color: #0E1826;
+		box-shadow: 0 2px 6px 0 rgba(136,148,171,.2);
+		overflow: hidden;
+		float: left;
+		}
+
+		#input6.night, #input7.night
+		{
+		font-family: 'DM Sans', sans-serif;
+		cursor: text;
+		border: none;
+		outline: none;
+		height: 100%;
+		width: 100%;
+		padding: 0 20px;
+		font-size: 16px;
+		color: white;
+		background-color: #182935;
+		z-index: 1;
+		}
+/*************************************Light*************************************/
+		#form6.day, #form7.day
+		{
+		border-radius: 20px;
+		background-color: #FFFFFF;
+		padding-right: 12px;
+		height: 6.5vh;
+		display: flex;
+		justify-content: space-between;
+		width: 60%;
+		color: #0E1826;
+		box-shadow: 0 2px 6px 0 rgba(136,148,171,.2);
+		overflow: hidden;
+		float: left;
+		}
+		#input6.day, #input7.day
+		{
+		font-family: 'DM Sans', sans-serif;
+		cursor: text;
+		border: none;
+		outline: none;
+		height: 100%;
+		width: 100%;
+		padding: 0 20px;
+		font-size: 16px;
+		z-index: 1;
+		}

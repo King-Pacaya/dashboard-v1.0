@@ -1,0 +1,66 @@
+  #timer.night
+  {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  background-color: transparent;
+  }
+  #timer.day
+  {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  background-color: transparent;
+  }
+  .mbtn
+  {
+  background-color: blue;
+  margin: 0 0 0 1vw;
+  height: 5.5vh;
+  float: left;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  }
+  .timer-content
+  {
+  position: fixed;
+  top: 10vh;
+  right: 10%;
+  width: 70vw;
+  height: 85vh;
+  overflow: auto;
+  display: none;
+  background: #eef3f7;
+  padding: 30px;
+  padding: 30px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0vw 1vh 15px rgba(0, 0, 0, 0.6);
+  }
+  .tshow
+  {
+  position: fixed;
+  top: 10vh;
+  right: 10%;
+  width: 70vw;
+  height: 85vh;
+  overflow: auto;
+  display: block;
+  background: #eef3f7;
+  padding: 30px;
+  padding: 30px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0vw 1vh 15px rgba(0, 0, 0, 0.6);
+  }
+#clock1, #clock2, #clock3
+{
+position: relative;
+margin: 0;
+padding: -20vh 0 0 0;
+width: 100%;
+height: 110vh;
+border: none;
+overflow: hidden;
+}
